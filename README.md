@@ -59,3 +59,7 @@ map
   </context>
 </template>
 ```
+
+### Where to config
+
+![image](https://user-images.githubusercontent.com/5471228/52039182-cdbf3000-256e-11e9-9455-953a90c2c652.png)
