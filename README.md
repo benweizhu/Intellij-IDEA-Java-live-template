@@ -27,6 +27,9 @@ filter
 ```sh
 fore
 ```
+
+![foreach](https://user-images.githubusercontent.com/5471228/52038810-04487b00-256e-11e9-9fa5-18c7647b6519.gif)
+
 ```xml
 <template name="fore" value="$ITERABLE_TYPE$.forEach($VAR$ -&gt; {&#10;  $EACH_VAR$&#10;});" description="Iterate Iterable | Array in J2SDK 5.0 syntax" toReformat="true" toShortenFQNames="true">
   <variable name="ITERABLE_TYPE" expression="iterableVariable()" defaultValue="" alwaysStopAt="true" />

@@ -21,6 +21,13 @@ public class CustomerService {
         .collect(Collectors.toList());
   }
 
+  public void initAllCustomerCredit(){
+    List<Customer> customers = getCustomers();
+    customers.forEach(customer -> {
+      customer.setCredit(100d);
+    });
+  }
+
   //Ignore the hard code down here
   private List<Customer> getCustomers() {
     List<Customer> customers = new ArrayList<>();
