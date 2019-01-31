@@ -60,6 +60,8 @@ map
 </template>
 ```
 
-### Where to config
+### Where and how to conf
+
+Copy the xml template above, go to the intellij live template editor, paste to whatever group you want to it to sit.
 
 ![image](https://user-images.githubusercontent.com/5471228/52039182-cdbf3000-256e-11e9-9455-953a90c2c652.png)
