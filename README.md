@@ -7,6 +7,10 @@
 filter
 ```
 
+
+![filter](https://user-images.githubusercontent.com/5471228/52038427-3ad1c600-256d-11e9-88ad-0b32b75f8a26.gif)
+
+
 ```xml
 <template name="filter" value="$ITERABLE_TYPE$.stream()&#10;    .filter($VAR$ -&gt; $VAR_CONDITION$)&#10;    .collect(Collectors.toList());" description="Iterate Iterable | Array in J2SDK 5.0 syntax" toReformat="true" toShortenFQNames="true">
   <variable name="ITERABLE_TYPE" expression="iterableVariable()" defaultValue="" alwaysStopAt="true" />

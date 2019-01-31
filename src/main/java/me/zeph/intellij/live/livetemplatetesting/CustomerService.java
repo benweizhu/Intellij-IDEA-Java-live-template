@@ -14,11 +14,18 @@ public class CustomerService {
     return customers.stream().map(Customer::getName).collect(Collectors.toList());
   }
 
+  public List<Customer> getCustomerOlderOrEqualsThan18(){
+    List<Customer> customers = getCustomers();
+    return customers.stream()
+        .filter(customer -> customer.getAge() >= 18)
+        .collect(Collectors.toList());
+  }
+
   //Ignore the hard code down here
   private List<Customer> getCustomers() {
     List<Customer> customers = new ArrayList<>();
-    Customer customer1 = new Customer("Benwei");
-    Customer customer2 = new Customer("Benwei Zhu");
+    Customer customer1 = new Customer("Benwei", 17);
+    Customer customer2 = new Customer("Benwei Zhu", 18);
     customers.add(customer1);
     customers.add(customer2);
     return customers;
