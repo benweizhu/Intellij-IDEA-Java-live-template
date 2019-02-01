@@ -50,7 +50,7 @@ map
 ![map](https://user-images.githubusercontent.com/5471228/52038121-2e00a280-256c-11e9-9503-3b11b5e7a922.gif)
 
 ```xml
-<template name="map" value="$ITERABLE_TYPE$.stream().map($VAR$ -&gt; $MAP_VAR$).collect(Collectors.toList());" description="Iterate Iterable | Array in J2SDK 5.0 syntax" toReformat="true" toShortenFQNames="true">
+<template name="map" value="$ITERABLE_TYPE$.stream()&#10;    .map($VAR$ -&gt; $MAP_VAR$)&#10;    .collect(Collectors.toList());" description="Iterate Iterable | Array in J2SDK 5.0 syntax" toReformat="true" toShortenFQNames="true">
   <variable name="VAR" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
   <variable name="ITERABLE_TYPE" expression="iterableVariable()" defaultValue="" alwaysStopAt="true" />
   <variable name="MAP_VAR" expression="suggestFirstVariableName()" defaultValue="" alwaysStopAt="true" />
