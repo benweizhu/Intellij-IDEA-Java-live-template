@@ -11,7 +11,9 @@ public class CustomerService {
 
   public List<String> getCustomerNames() {
     List<Customer> customers = getCustomers();
-    return customers.stream().map(Customer::getName).collect(Collectors.toList());
+    return customers.stream()
+        .map(Customer::getName)
+        .collect(Collectors.toList());
   }
 
   public List<Customer> getCustomerOlderOrEqualsThan18(){
